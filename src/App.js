@@ -7,7 +7,7 @@ import Home from "./home";
 function App() {
   return (
     <Flex>
-      <Flex  h="100vh" w="100%">
+      <Flex  h="100vh" w="100%" >
         <Home />
       </Flex>
       <Navbar />
