@@ -23,7 +23,7 @@ const Home = () => {
         top={200}
         left={520}
       >
-        <Text >Christian</Text>
+        <Text>Christian</Text>
         <Text pl={20}>Thompson</Text>
       </Stack>
 
