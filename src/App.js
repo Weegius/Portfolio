@@ -1,18 +1,19 @@
 import React from "react";
-import { Flex, Text, Image} from "@chakra-ui/react";
+import { Flex, Text, Image, } from "@chakra-ui/react";
 import {
   AiFillGithub,
   AiOutlineInstagram,
   AiOutlineTwitter,
   AiFillLinkedin,
 } from "react-icons/ai";
+import { MdOutlineDoubleArrow } from "react-icons/md";
 import IconComponent from "./IconComponent";
 
 function App() {
   return (
     <>
-      <Flex  h="100vh" w="100%">
-        <Flex w='100%' h='100%' p={50}>
+      <Flex h="100vh" w="100%">
+        <Flex w="100%" h="100%" p={50}>
           <Flex p={3} w="60%" h="100%" bg="#f74239">
             <Flex
               p={3}
@@ -50,16 +51,20 @@ function App() {
             </Flex>
           </Flex>
           <Flex
-            alignSelf={"center"}
+            alignSelf="center"
             w="40%"
             h="100%"
             bg="#F5F5F5"
             flexDir={"column"}
-            fontSize={120}
+            justifyContent="space-between"
           >
-            <Flex alignSelf="center" flexDir={"column"}>
+            <Flex alignSelf="center" flexDir={"column"} fontSize={120}>
               <Text>Christian</Text>
               <Text mt={-10}>Thompson</Text>
+            </Flex>
+            <Flex alignItems="center" flexDir="column">
+              <MdOutlineDoubleArrow style={{ transform: "rotate(90deg)" }} />
+              <Text>Scroll</Text>
             </Flex>
           </Flex>
         </Flex>
@@ -67,12 +72,12 @@ function App() {
           // w="100%"
           flexDir="column"
           alignSelf="center"
-          pos='relative'
+          pos="relative"
           ml={-10}
           mr={2}
           mt={250}
           h={200}
-          justifyContent='space-between'
+          justifyContent="space-between"
         >
           <IconComponent icon={AiFillGithub} />
           <IconComponent icon={AiFillLinkedin} />
