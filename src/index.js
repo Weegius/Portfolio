@@ -2,14 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import "@fontsource/bebas-neue";
 
 
-
+const theme = extendTheme({
+  fonts: {
+    body: "bebas neue"
+  }
+})
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider >
+    <ChakraProvider theme={theme} >
       <App />
     </ChakraProvider>
   </React.StrictMode>,
