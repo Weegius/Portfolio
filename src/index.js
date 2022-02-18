@@ -6,6 +6,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import "@fontsource/bebas-neue";
 
 
+
 const theme = extendTheme({
   fonts: {
     body: "bebas neue"
