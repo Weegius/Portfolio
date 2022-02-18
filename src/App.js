@@ -1,10 +1,10 @@
 import React from "react";
-import { Flex, Text, Image, AspectRatio } from "@chakra-ui/react";
+import { Flex, Text, Image} from "@chakra-ui/react";
 
 function App() {
   return (
     <Flex>
-      <Flex p={30} h="100vh" w="100%">
+      <Flex p={50} h="100vh" w="100%">
         <Flex p={3} w="60%" h="100%" bg="#f74239">
           <Flex
             p={3}
