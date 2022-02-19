@@ -28,7 +28,7 @@ function App() {
           <IconComponent icon={AiOutlineTwitter} />
         </Flex>
 
-        <Flex w="100%" h="100%" pt={[0, 0, 50, 50]} p={50}>
+        <Flex w="100%" minH={'100%'} h="auto" pt={[0, 0, 50, 50]} p={50}>
           {/* -------------- Red Flex -------------- */}
           <Flex  p={3} w={['100%', '100%', '60%', "60%"]} h="100%" bg="#f74239">
             <Flex
@@ -49,7 +49,7 @@ function App() {
               <Text>Christian</Text>
               <Text mt={-10}>Thompson</Text>
             </Flex>
-              <Flex alignSelf={"center"} >
+              <Flex bg='blue' alignSelf={"center"} >
                 <Flex
                   pos="absolute"
                   alignSelf={"center"}
@@ -59,6 +59,8 @@ function App() {
                   ml={4}
                   w={[150, 165, 250, 250]}
                   h={[250, 250, 350, 350]}
+                  display={["none", "none", "flex", "flex"]}
+
                 />
                 {/*------Images------- */}
                 <Image
@@ -68,6 +70,7 @@ function App() {
                   alignSelf={"center"}
                   w={[150, 170, 250, 250]}
                   h={[250, 260, 350, 350]}
+                  display={["none", "none", "flex", "flex"]}
                 />
               </Flex>
               
