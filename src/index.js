@@ -4,8 +4,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import "@fontsource/bebas-neue";
-
-
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Projects from "./components/projects";
+import Home from "./components/home";
 
 const theme = extendTheme({
   fonts: {
@@ -16,7 +17,14 @@ const theme = extendTheme({
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme} >
-      <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}> 
+          <Route path="/" element={<Home />}/>
+          <Route path="projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </Router>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")
