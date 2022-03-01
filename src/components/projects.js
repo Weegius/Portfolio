@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
-import ProjectCard from "./projectcard";
+import VirtualCloset from "./virtualcloset";
+import NewConnections from "./newconnections";
 
 
 const Projects = () => {
@@ -14,8 +15,8 @@ const Projects = () => {
     borderColor={"white"}
     borderWidth={1}
     >
-      <ProjectCard />
-      <ProjectCard />
+      <VirtualCloset />
+      <NewConnections/>
     </Flex>
   );
 };

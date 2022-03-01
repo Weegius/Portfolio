@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-const ProjectCard = () => {
+const NewConnections = () => {
   return (
     <Center>
       <Box
@@ -25,11 +25,11 @@ const ProjectCard = () => {
       >
         <Stack pt={5} align={"center"}>
           <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
-            Virtual Closet
+            New Connections
           </Heading>
           <Stack direction={"row"} align={"center"}>
             <Text color={"gray.600"}>
-              A virtual place to keep track of all your clothes
+              A way to get connected with people with similar hobbies
             </Text>
           </Stack>
         </Stack>
@@ -62,4 +62,4 @@ const ProjectCard = () => {
     </Center>
   );
 };
-export default ProjectCard;
+export default NewConnections;
