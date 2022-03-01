@@ -9,6 +9,7 @@ import {
 import IconComponent from "./components/IconComponent";
 import { motion } from "framer-motion"
 import { Link, Outlet } from "react-router-dom";
+import InitialTransition from "./components/transition";
 
 
 const App = () => {
