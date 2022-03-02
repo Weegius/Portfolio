@@ -15,6 +15,7 @@ import InitialTransition from "./components/transition";
 const App = () => {
   return (
     <>
+    <InitialTransition />
       <Flex h="100vh" w="100%" flexDir={["column", "column", "row", "row"]}>
         <Flex
           display={["flex", "flex", "none", "none"]}

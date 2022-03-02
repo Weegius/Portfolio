@@ -33,7 +33,7 @@ const NewConnections = () => {
             </Text>
           </Stack>
         </Stack>
-        <Center pt={5}>
+        <Center pt={5} justifyContent="space-around">
           <motion.div whileHover={{ scale: 1.1 }}>
             <Button
               direction={"row"}
@@ -41,6 +41,7 @@ const NewConnections = () => {
               bg={"black"}
               color={"white"}
               _hover={{ cursor: "pointer", bg: "#f74239" }}
+              onClick={()=>window.location.href="https://github.com/ACS-ABC/New-Connections"}
             >
               Github
             </Button>
@@ -53,6 +54,7 @@ const NewConnections = () => {
               bg={"black"}
               color={"white"}
               _hover={{ cursor: "pointer", bg: "#f74239" }}
+              // onClick={()=>window.location.href=}
             >
               Live
             </Button>

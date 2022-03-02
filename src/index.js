@@ -7,7 +7,6 @@ import "@fontsource/bebas-neue";
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Projects from "./components/projects";
 import Home from "./components/home";
-import InitialTransition from "./components/transition";
 
 const theme = extendTheme({
   fonts: {

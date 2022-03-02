@@ -34,7 +34,7 @@ const VirtualCloset = () => {
             </Text>
           </Stack>
         </Stack>
-        <Center pt={5}>
+        <Center pt={5} justifyContent="space-around">
           <motion.div whileHover={{ scale: 1.1 }}>
             <Button
               direction={"row"}
@@ -42,6 +42,8 @@ const VirtualCloset = () => {
               bg={"black"}
               color={"white"}
               _hover={{ cursor: "pointer", bg: "#f74239" }}
+              onClick={()=>window.location.href=
+              'https://github.com/Weegius/Virtual-Closet' }
             >
               Github
             </Button>
@@ -54,6 +56,8 @@ const VirtualCloset = () => {
               bg={"black"}
               color={"white"}
               _hover={{ cursor: "pointer", bg: "#f74239" }}
+              onClick={()=>window.location.href=
+              'https://virtualcloset-ct.herokuapp.com/' }
             >
               Live
             </Button>
