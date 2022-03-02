@@ -65,12 +65,13 @@ const App = () => {
               flexDir="row"
               fontSize={20}
             >
-              <motion.div whileHover={{ scale: 1.1 }} _hover={{ cursor: "pointer", color: "#f74239" }}>
-                <Link to="projects">Projects</Link>
-              </motion.div>
               <motion.div whileHover={{ scale: 1.1 }}>
                 <Link to="/">Home</Link>
               </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} _hover={{ cursor: "pointer", color: "#f74239" }}>
+                <Link to="projects">Projects</Link>
+              </motion.div>
+              
               <motion.div whileHover={{ scale: 1.1 }}>
                 <a href = "mailto: ChristianThompson1@hotmail.com" _hover={{ cursor: "pointer", color: "#f74239" }}>Connect</a>
               </motion.div>
