@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Center,
-  Heading,
-  Text,
-  Stack,
-  Button,
-} 
-from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Stack, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const VirtualCloset = () => {
@@ -42,8 +34,10 @@ const VirtualCloset = () => {
               bg={"black"}
               color={"white"}
               _hover={{ cursor: "pointer", bg: "#f74239" }}
-              onClick={()=>window.location.href=
-              'https://github.com/Weegius/Virtual-Closet' }
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/Weegius/Virtual-Closet")
+              }
             >
               Github
             </Button>
@@ -56,8 +50,10 @@ const VirtualCloset = () => {
               bg={"black"}
               color={"white"}
               _hover={{ cursor: "pointer", bg: "#f74239" }}
-              onClick={()=>window.location.href=
-              'https://virtualcloset-ct.herokuapp.com/' }
+              onClick={() =>
+                (window.location.href =
+                  "https://virtualcloset-ct.herokuapp.com/")
+              }
             >
               Live
             </Button>

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Center,
-  Heading,
-  Text,
-  Stack,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Stack, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const NewConnections = () => {
@@ -41,7 +34,10 @@ const NewConnections = () => {
               bg={"black"}
               color={"white"}
               _hover={{ cursor: "pointer", bg: "#f74239" }}
-              onClick={()=>window.location.href="https://github.com/ACS-ABC/New-Connections"}
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/ACS-ABC/New-Connections")
+              }
             >
               Github
             </Button>

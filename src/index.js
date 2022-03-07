@@ -17,14 +17,14 @@ const theme = extendTheme({
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider theme={theme} >
-    <Router>
-        <Routes>
-          <Route path="/" element={<App />}> 
-            <Route path="/" element={<Home />}/>
-            <Route path="projects" element={<Projects />} />
-          </Route>
-        </Routes>
-    </Router>
+      <Router>
+          <Routes>
+            <Route path="/" element={<App />}> 
+              <Route path="/" element={<Home />}/>
+              <Route path="projects" element={<Projects />} />
+            </Route>
+          </Routes>
+      </Router>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")
