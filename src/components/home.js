@@ -56,7 +56,8 @@ const Home = () => {
 
               <Flex
                 flexDir={["none", "column", "none", "column"]}
-                fontSize={[40, 60, 60, 60]}
+                fontSize={[30, 60, 60, 60]}
+                mt={[5, 10, 10, 0]}
               >
                 <Text>Front End</Text>
                 <Text ml={10} mt={-15}>
