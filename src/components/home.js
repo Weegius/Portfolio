@@ -65,6 +65,7 @@ const Home = () => {
               fontSize={[45, 60, 60, 60]}
               mt={[5, 10, 10, 10]}
               textAlign="center"
+              lineHeight={[10, 0, 0, 0]}
             >
               <Text>Front End</Text>
               <Text ml={[0, 0, 0, 0]} fontWeight={200}>
