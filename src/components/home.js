@@ -22,6 +22,7 @@ const Home = () => {
             exit={{ opacity: 0 }}
           >
             <Flex alignSelf={"center"} flexDir="column">
+              {/* work */}
 
               {/* ----------------- NAME -------------------- */}
               <Flex
