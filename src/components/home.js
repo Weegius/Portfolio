@@ -7,13 +7,12 @@ const Home = () => {
     <>
       <AnimatePresence>
         <Flex
-          p={3}
-          justifyContent={"space-between"}
-          flexDir={"column"}
+          // justifyContent={"space-between"}
           h="100%"
           w="100%"
           borderColor={"white"}
           borderWidth={1}
+          justify="center"
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -21,16 +20,20 @@ const Home = () => {
             exit={{ opacity: 0 }}
           >
             <Flex alignSelf={"center"} flexDir="column">
+              {/* ----------------- NAME -------------------- */}
               <Flex
                 display={["flex", "flex", "none", "none"]}
                 alignSelf="center"
                 flexDir={"column"}
                 fontSize={[70, 100, 20, 20, 1]}
+                // bg="white"
               >
                 <Text>Christian</Text>
                 <Text mt={-10}>Thompson</Text>
               </Flex>
-              <Flex alignSelf={"center"}>
+
+              <Flex alignSelf={"center"} mt={[0, 0, 0, 2]}>
+                {/* ------------- WHITE BOX AROUND IMAGE -------------------- */}
                 <Flex
                   pos="absolute"
                   alignSelf={"center"}
@@ -38,11 +41,11 @@ const Home = () => {
                   borderColor={"white"}
                   mt={5}
                   ml={4}
-                  w={[130, 165, 250, 270]}
+                  w={[145, 165, 250, 270]}
                   h={[230, 250, 350, 400]}
                   display={["flex", "none", "flex", "flex"]}
                 />
-                {/*------Images------- */}
+                {/*--------------------- IMAGE -------------------- */}
                 <Image
                   src="./images/headshot.jpg"
                   alt="Headshot"
@@ -53,17 +56,22 @@ const Home = () => {
                   display={["flex", "none", "flex", "flex"]}
                 />
               </Flex>
+            </Flex>
 
-              <Flex
-                flexDir={["none", "column", "none", "column"]}
-                fontSize={[30, 60, 60, 60]}
-                mt={[5, 10, 10, 0]}
-              >
-                <Text>Front End</Text>
-                <Text ml={10} mt={-15}>
-                  Web Developer
-                </Text>
-              </Flex>
+            {/* --------------- BOTTOM TEXT ---------------- */}
+
+            <Flex
+              flexDir={["column", "row", "column", "row"]}
+              fontSize={[45, 60, 60, 60]}
+              mt={[5, 10, 10, 20]}
+              textAlign="center"
+              lineHeight={[10, 0, 0, 0]}
+            >
+              <Text alignSelf="center">Front End</Text>
+              <Flex w={25} h={25} rounded={50} border='2px' color={'white'} ml={3} mr={3} display={["none", "none", "none", "flex"]}/>
+              <Text alignSelf="center" ml={[0, 0, 0, 0]} fontWeight={200}>
+                Web Developer
+              </Text>
             </Flex>
           </motion.div>
         </Flex>
