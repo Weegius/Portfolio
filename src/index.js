@@ -5,8 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import "@fontsource/bebas-neue";
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import Projects from "./components/projects";
-import Home from "./components/home";
+import Projects from "./pages/projects";
+import Home from "./pages/home";
 
 const theme = extendTheme({
   fonts: {
@@ -21,7 +21,7 @@ ReactDOM.render(
           <Routes>
             <Route path="/" element={<App />}> 
               <Route path="/" element={<Home />}/>
-              <Route path="projects" element={<Projects />} />
+              <Route path="/projects" element={<Projects />} />
             </Route>
           </Routes>
       </Router>
