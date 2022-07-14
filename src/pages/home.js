@@ -41,8 +41,8 @@ const Home = () => {
                   borderColor={"white"}
                   mt={5}
                   ml={4}
-                  w={[145, 165, 250, 270]}
-                  h={[230, 250, 350, 400]}
+                  w={[145, 165, 250, 230]}
+                  h={[230, 250, 350, 340]}
                   display={["flex", "none", "flex", "flex"]}
                 />
                 {/*--------------------- IMAGE -------------------- */}
@@ -51,8 +51,8 @@ const Home = () => {
                   alt="Headshot"
                   pos="relative"
                   alignSelf={"center"}
-                  w={[140, 170, 250, 270]}
-                  h={[230, 260, 350, 400]}
+                  w={[140, 170, 250, 230]}
+                  h={[230, 260, 350, 340]}
                   display={["flex", "none", "flex", "flex"]}
                 />
               </Flex>
