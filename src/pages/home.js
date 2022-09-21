@@ -61,17 +61,29 @@ const Home = () => {
             {/* --------------- BOTTOM TEXT ---------------- */}
 
             <Flex
-              flexDir={["column", "row", "column", "row"]}
+              // flexDir={["column", "row", "column", "row"]}
               fontSize={[45, 60, 60, 60]}
-              mt={[5, 10, 10, 20]}
-              textAlign="center"
+              mt={[5, 10, 10, 20]} 
               lineHeight={[10, 0, 0, 0]}
+              // alignItems={"flex-end"}
+              
+              
             >
               <Text alignSelf="center">Front End</Text>
-              <Flex w={25} h={25} rounded={50} border='2px' color={'white'} ml={3} mr={3} display={["none", "none", "none", "flex"]}/>
+              <Flex
+                w={25}
+                h={25}
+                rounded={50}
+                border="2px"
+                color={"white"}
+                ml={3}
+                mr={3}
+                display={["none", "none", "none", "flex"]}
+              />
               <Text alignSelf="center" ml={[0, 0, 0, 0]} fontWeight={200}>
                 Web Developer
               </Text>
+
             </Flex>
           </motion.div>
         </Flex>
