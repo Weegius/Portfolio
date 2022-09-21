@@ -29,7 +29,7 @@ const Project = ({ title, description, github_url, live_url }) => {
               direction={"row"}
               align={"center"}
               bg={"black"}
-              color={"white"}
+              color={"white"} 
               _hover={{ cursor: "pointer", bg: "#f74239" }}
               onClick={() => (window.location.href = github_url)}
             >

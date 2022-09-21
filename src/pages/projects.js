@@ -25,7 +25,7 @@ const Projects = () => {
         >
           <Flex
             p={3}
-            overflowY="scroll"
+            overflowY="auto"
             flexDir={"column"}
             h="100%"
             w="100%"
@@ -43,12 +43,6 @@ const Projects = () => {
                 />
               </Flex>
             ))}
-            {/* <Flex>
-              <VirtualCloset />
-            </Flex>
-            <Flex justifyContent={"right"}>
-              <NewConnections />
-            </Flex> */}
           </Flex>
         </motion.div>
       </AnimatePresence>
