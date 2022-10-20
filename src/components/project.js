@@ -16,7 +16,7 @@ const Project = ({ title, description, github_url, live_url }) => {
         zIndex={1}
       >
         <Stack pt={5} align={"center"}>
-          <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
+          <Heading fontSize={"4xl"} fontFamily={"body"} fontWeight={500}>
             {title}
           </Heading>
           <Stack direction={"row"} align={"center"}>
