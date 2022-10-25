@@ -12,12 +12,7 @@ const SideCons = () => {
   return (
     <Flex
       flexDir="column"
-      alignSelf="center"
-      pos="relative"
-      mt={250}
-      h={200}
-      justifyContent="space-between"
-      display={["none", "none", "flex", "flex"]}
+      
     >
       <IconComponent icon={AiFillGithub} link="https://github.com/Weegius" />
       <IconComponent

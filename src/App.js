@@ -18,7 +18,10 @@ import RedBox from "./components/RedBox";
 const App = () => {
   return (
     <>
-      <Center w={"100%"} h={"100vh"} >
+      <Center 
+      h={"100vh"} 
+      // bg='green'
+      >
         <RedBox />
       </Center>
     </>
