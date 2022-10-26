@@ -19,7 +19,9 @@ const App = () => {
   return (
     <>
       <Center 
-      h={"100vh"} 
+      p={10}
+      w={'100%'}
+      h={'100vh'}
       // bg='green'
       >
         <RedBox />

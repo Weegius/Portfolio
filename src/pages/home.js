@@ -9,7 +9,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, scale: [1.05, 1], }}
-          transition={{ duration: 1.5, delay: 2.6 }}
+          transition={{ duration: 1.5, delay: 3 }}
           style={{ width: "100%", height: "100%" }}
 
         >
