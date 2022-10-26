@@ -1,6 +1,7 @@
 import React from "react";
-import { Flex, Text, Link } from "@chakra-ui/react";
+import { Flex, Text, Link, Center } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import TypeWriterEffect from "react-typewriter-effect";
 
 const GrayBox = () => {
   return (
@@ -23,10 +24,19 @@ const GrayBox = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 4 }}
           >
-            {/* <Flex flexDir="column" fontSize={[60, 80, 100, 120]} w="100%">
-              <Text>Christian</Text>
-              <Text mt={[-20, -30, -50, -50, -20]}>Thompson</Text>
-            </Flex> */}
+            <Flex flexDir="column" fontSize={[60, 80, 100, 120]}>
+              <TypeWriterEffect
+                startDelay={5000}
+                cursorColor="#3F3D56"
+                text="Christian Thompson"
+                hideCursorAfterText={true}
+                textStyle={{
+                  lineHeight: "1",
+                  marginTop: "50px",
+                  marginLeft: "100px",
+                }}
+              />
+            </Flex>
           </motion.div>
 
           {/* <Flex justifyContent="space-around" flexDir="row" fontSize={20}>
