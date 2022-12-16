@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Image } from "@chakra-ui/react";
+import { Flex, Text, Image, Box } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Home = () => {
@@ -8,17 +8,17 @@ const Home = () => {
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, scale: [1.05, 1], }}
+          animate={{ opacity: 1, scale: [1.05, 1] }}
           transition={{ duration: 1.5, delay: 3 }}
           style={{ width: "100%", height: "100%" }}
-
         >
-          <Flex
+          <Box
             h="100%"
             w="100%"
             borderColor={"white"}
             borderWidth={1}
-            justify="center"
+            // justify="center"
+            // marginRight={15}
           >
             <motion.div
               initial={{ opacity: 0 }}
@@ -92,7 +92,7 @@ const Home = () => {
 
             </Flex> */}
             </motion.div>
-          </Flex>
+          </Box>
         </motion.div>
       </AnimatePresence>
     </>

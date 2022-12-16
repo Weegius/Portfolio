@@ -1,15 +1,7 @@
 import React from "react";
-import { Flex, Text } from "@chakra-ui/react";
-import {
-  AiFillGithub,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import IconComponent from "./IconComponent";
+import { Flex } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link, Outlet } from "react-router-dom";
-import InitialTransition from "./transition";
+import { Outlet } from "react-router-dom";
 import GrayBox from "./GrayBox";
 
 const RedBox = () => {

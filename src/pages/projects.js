@@ -18,6 +18,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 3 }}
           exit={{ opacity: 0 }}
           style={{ width: "100%", height: "100%" }}
         >

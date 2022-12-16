@@ -1,7 +1,9 @@
 import React from "react";
-import { Flex, Link, Spacer } from "@chakra-ui/react";
+import { Flex, Spacer } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
+import { Link } from "react-router-dom";
+import AnimatedLink from "./Links";
 
 const GrayBox = () => {
   return (
@@ -48,7 +50,7 @@ const GrayBox = () => {
             justify={"center"}
             justifyContent="space-evenly"
           >
-            <motion.div whileHover={{ scale: 1.1 }}>
+            {/* <motion.div whileHover={{ scale: 1.1 }}>
               <Link
                 _hover={{ cursor: "pointer", color: "#f74239" }}
                 style={{ textDecoration: "none" }}
@@ -75,7 +77,10 @@ const GrayBox = () => {
               >
                 Connect
               </Link>
-            </motion.div>
+            </motion.div> */}
+            <AnimatedLink word={"Home"} to={"/"} />
+            <AnimatedLink word={"Projects"} to={"projects"} />
+            <AnimatedLink word={"Connect"} to={"connect"} />
           </Flex>
         </Flex>
       </motion.div>
