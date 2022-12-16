@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Link, Center } from "@chakra-ui/react";
+import { Flex, Link, Spacer } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
 
@@ -18,6 +18,7 @@ const GrayBox = () => {
           display={["none", "none", "flex", "flex"]}
           h={"100.06%"}
           bg="#F5F5F5"
+          flexDir={"column"}
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -38,27 +39,44 @@ const GrayBox = () => {
               />
             </Flex>
           </motion.div>
+          <Spacer />
 
-          {/* <Flex justifyContent="space-around" flexDir="row" fontSize={20}>
-              <motion.div whileHover={{ scale: 1.1 }}>
-                <Link to="/">Home</Link>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
+          <Flex
+            flexDir="row"
+            fontSize={25}
+            // bg="red"
+            justify={"center"}
+            justifyContent="space-evenly"
+          >
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
                 _hover={{ cursor: "pointer", color: "#f74239" }}
+                style={{ textDecoration: "none" }}
+                to="/"
               >
-                <Link to="projects">Projects</Link>
-              </motion.div>
+                Home
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
+                to="projects"
+                _hover={{ cursor: "pointer", color: "#f74239" }}
+                style={{ textDecoration: "none" }}
+              >
+                Projects
+              </Link>
+            </motion.div>
 
-              <motion.div whileHover={{ scale: 1.1 }}>
-                <a
-                  href="mailto: ChristianThompson1@hotmail.com"
-                  _hover={{ cursor: "pointer", color: "#f74239" }}
-                >
-                  Connect
-                </a>
-              </motion.div>
-            </Flex> */}
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <Link
+                to="connect"
+                _hover={{ cursor: "pointer", color: "#f74239" }}
+                style={{ textDecoration: "none" }}
+              >
+                Connect
+              </Link>
+            </motion.div>
+          </Flex>
         </Flex>
       </motion.div>
     </>

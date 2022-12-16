@@ -7,7 +7,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     fetch(
-      "https://api.bettrdash.eliaswambugu.com/v1/api/projects?key=5124dcf0-032f-11ed-8d7c-0fdc20fad355"
+      "https://api.bettrdash.com/projects/?key=5124dcf0-032f-11ed-8d7c-0fdc20fad355"
     )
       .then((res) => res.json())
       .then((data) => setProjects(data.projects));
