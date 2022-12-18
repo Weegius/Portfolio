@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Image, Box } from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Home = () => {
@@ -18,7 +18,6 @@ const Home = () => {
             borderColor={"white"}
             borderWidth={1}
             // justify="center"
-            // marginRight={15}
           >
             <motion.div
               initial={{ opacity: 0 }}

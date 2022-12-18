@@ -3,12 +3,9 @@ import { useState } from "react";
 import { Link as ReachLink } from "react-router-dom";
 
 const AnimatedLink = ({ word, to }) => {
-  const degrees = [23, -30, 18, -25, 38];
+  const degrees = [23, -30, 18, -25, 38, -20, 45];
   const [hover, setHover] = useState(false);
 
-  // useEffect(() => {
-  //   console.log(hover);
-  // }, [hover]);
   return (
     <Box
       display="flex"
@@ -22,7 +19,6 @@ const AnimatedLink = ({ word, to }) => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        // bg={"red"}
         p={1}
         _hover={{
           cursor: "pointer",

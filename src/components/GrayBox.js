@@ -2,7 +2,6 @@ import React from "react";
 import { Flex, Spacer } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
-import { Link } from "react-router-dom";
 import AnimatedLink from "./Links";
 
 const GrayBox = () => {
@@ -16,7 +15,7 @@ const GrayBox = () => {
       >
         <Flex
           overflow={"hidden"}
-          w="600px"
+          w="615px"
           display={["none", "none", "flex", "flex"]}
           h={"100.06%"}
           bg="#F5F5F5"
@@ -42,46 +41,22 @@ const GrayBox = () => {
             </Flex>
           </motion.div>
           <Spacer />
-
-          <Flex
-            flexDir="row"
-            fontSize={25}
-            // bg="red"
-            justify={"center"}
-            justifyContent="space-evenly"
+          <motion.div
+               initial={{ opacity: 0, scale: 0.5 }}
+               animate={{ opacity: 1, scale: 1 }}
+               transition={{ duration: .5, delay: 8 }}
           >
-            {/* <motion.div whileHover={{ scale: 1.1 }}>
-              <Link
-                _hover={{ cursor: "pointer", color: "#f74239" }}
-                style={{ textDecoration: "none" }}
-                to="/"
-              >
-                Home
-              </Link>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.1 }}>
-              <Link
-                to="projects"
-                _hover={{ cursor: "pointer", color: "#f74239" }}
-                style={{ textDecoration: "none" }}
-              >
-                Projects
-              </Link>
-            </motion.div>
-
-            <motion.div whileHover={{ scale: 1.1 }}>
-              <Link
-                to="connect"
-                _hover={{ cursor: "pointer", color: "#f74239" }}
-                style={{ textDecoration: "none" }}
-              >
-                Connect
-              </Link>
-            </motion.div> */}
-            <AnimatedLink word={"Home"} to={"/"} />
-            <AnimatedLink word={"Projects"} to={"projects"} />
-            <AnimatedLink word={"Connect"} to={"connect"} />
-          </Flex>
+            <Flex
+              flexDir="row"
+              fontSize={25}
+              justify={"center"}
+              justifyContent="space-evenly"
+            >
+              <AnimatedLink word={"Home"} to={"/"} />
+              <AnimatedLink word={"Projects"} to={"projects"} />
+              <AnimatedLink word={"Connect"} to={"connect"} />
+            </Flex>
+          </motion.div>
         </Flex>
       </motion.div>
     </>
