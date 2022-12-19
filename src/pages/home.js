@@ -6,22 +6,28 @@ const Home = () => {
   return (
     <>
       <AnimatePresence>
-        <Flex
-          // justifyContent={"space-between"}
-          h="100%"
-          w="100%"
-          borderColor={"white"}
-          borderWidth={1}
-          justify="center"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, scale: [1.05, 1], }}
+          transition={{ duration: 1.5, delay: 3 }}
+          style={{ width: "100%", height: "100%" }}
+
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+          <Flex
+            h="100%"
+            w="100%"
+            borderColor={"white"}
+            borderWidth={1}
+            justify="center"
           >
-            <Flex alignSelf={"center"} flexDir="column">
-              {/* ----------------- NAME -------------------- */}
-              <Flex
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <Flex alignSelf={"center"} flexDir="column">
+                {/* ----------------- NAME -------------------- */}
+                {/* <Flex
                 display={["flex", "flex", "none", "none"]}
                 alignSelf="center"
                 flexDir={"column"}
@@ -30,11 +36,11 @@ const Home = () => {
               >
                 <Text>Christian</Text>
                 <Text mt={-10}>Thompson</Text>
-              </Flex>
+              </Flex> */}
 
-              <Flex alignSelf={"center"} mt={[0, 0, 0, 2]}>
-                {/* ------------- WHITE BOX AROUND IMAGE -------------------- */}
-                <Flex
+                <Flex alignSelf={"center"} mt={[0, 0, 0, 2]}>
+                  {/* ------------- WHITE BOX AROUND IMAGE -------------------- */}
+                  {/* <Flex
                   pos="absolute"
                   alignSelf={"center"}
                   borderWidth={1}
@@ -44,9 +50,9 @@ const Home = () => {
                   w={[145, 165, 250, 230]}
                   h={[230, 250, 350, 340]}
                   display={["flex", "none", "flex", "flex"]}
-                />
-                {/*--------------------- IMAGE -------------------- */}
-                <Image
+                /> */}
+                  {/*--------------------- IMAGE -------------------- */}
+                  {/* <Image
                   src="./images/headshot.jpg"
                   alt="Headshot"
                   pos="relative"
@@ -54,13 +60,13 @@ const Home = () => {
                   w={[140, 170, 250, 230]}
                   h={[230, 260, 350, 340]}
                   display={["flex", "none", "flex", "flex"]}
-                />
+                /> */}
+                </Flex>
               </Flex>
-            </Flex>
 
-            {/* --------------- BOTTOM TEXT ---------------- */}
+              {/* --------------- BOTTOM TEXT ---------------- */}
 
-            <Flex
+              {/* <Flex
               // flexDir={["column", "row", "column", "row"]}
               fontSize={[45, 60, 60, 60]}
               mt={[5, 10, 10, 20]} 
@@ -84,9 +90,10 @@ const Home = () => {
                 Web Developer
               </Text>
 
-            </Flex>
-          </motion.div>
-        </Flex>
+            </Flex> */}
+            </motion.div>
+          </Flex>
+        </motion.div>
       </AnimatePresence>
     </>
   );

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Flex } from "@chakra-ui/react";
-import VirtualCloset from "../components/virtualcloset";
-import NewConnections from "../components/newconnections";
 import { AnimatePresence, motion } from "framer-motion";
 import Project from "../components/project";
 
