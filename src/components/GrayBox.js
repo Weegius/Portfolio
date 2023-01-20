@@ -7,6 +7,7 @@ import AnimatedLink from "./Links";
 const GrayBox = () => {
   return (
     <>
+      {/* NAME ---------------------------------- */}
       <motion.div
         style={{ overflow: "hidden", width: "100%" }}
         initial={{ width: 0, opacity: 1 }}
@@ -40,7 +41,10 @@ const GrayBox = () => {
               />
             </Flex>
           </motion.div>
+
           <Spacer />
+
+          {/* BUTTONS TO OTHER PAGES ------------------------- */}
           <motion.div
                initial={{ opacity: 0, scale: 0.5 }}
                animate={{ opacity: 1, scale: 1 }}
