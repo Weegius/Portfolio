@@ -1,11 +1,13 @@
 import React from "react";
-import { Flex, Text, Link, Center } from "@chakra-ui/react";
+import { Flex, Spacer } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
+import AnimatedLink from "./Links";
 
 const GrayBox = () => {
   return (
     <>
+      {/* NAME ---------------------------------- */}
       <motion.div
         style={{ overflow: "hidden", width: "100%" }}
         initial={{ width: 0, opacity: 1 }}
@@ -14,10 +16,11 @@ const GrayBox = () => {
       >
         <Flex
           overflow={"hidden"}
-          w="600px"
+          w="615px"
           display={["none", "none", "flex", "flex"]}
           h={"100.06%"}
           bg="#F5F5F5"
+          flexDir={"column"}
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -39,26 +42,25 @@ const GrayBox = () => {
             </Flex>
           </motion.div>
 
-          {/* <Flex justifyContent="space-around" flexDir="row" fontSize={20}>
-              <motion.div whileHover={{ scale: 1.1 }}>
-                <Link to="/">Home</Link>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                _hover={{ cursor: "pointer", color: "#f74239" }}
-              >
-                <Link to="projects">Projects</Link>
-              </motion.div>
+          <Spacer />
 
-              <motion.div whileHover={{ scale: 1.1 }}>
-                <a
-                  href="mailto: ChristianThompson1@hotmail.com"
-                  _hover={{ cursor: "pointer", color: "#f74239" }}
-                >
-                  Connect
-                </a>
-              </motion.div>
-            </Flex> */}
+          {/* BUTTONS TO OTHER PAGES ------------------------- */}
+          <motion.div
+               initial={{ opacity: 0, scale: 0.5 }}
+               animate={{ opacity: 1, scale: 1 }}
+               transition={{ duration: .5, delay: 8 }}
+          >
+            <Flex
+              flexDir="row"
+              fontSize={25}
+              justify={"center"}
+              justifyContent="space-evenly"
+            >
+              <AnimatedLink word={"Home"} to={"/"} />
+              <AnimatedLink word={"Projects"} to={"projects"} />
+              <AnimatedLink word={"Connect"} to={"connect"} />
+            </Flex>
+          </motion.div>
         </Flex>
       </motion.div>
     </>

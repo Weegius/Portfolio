@@ -7,7 +7,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     fetch(
-      "https://api.bettrdash.eliaswambugu.com/v1/api/projects?key=5124dcf0-032f-11ed-8d7c-0fdc20fad355"
+      "https://api.bettrdash.com/projects/?key=5124dcf0-032f-11ed-8d7c-0fdc20fad355"
     )
       .then((res) => res.json())
       .then((data) => setProjects(data.projects));
@@ -18,6 +18,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          // transition={{ duration: 1, delay: 3 }}
           exit={{ opacity: 0 }}
           style={{ width: "100%", height: "100%" }}
         >

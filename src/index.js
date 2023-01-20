@@ -7,6 +7,7 @@ import "@fontsource/bebas-neue";
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Projects from "./pages/projects";
 import Home from "./pages/home";
+import Connect from "./pages/Connect";
 
 const theme = extendTheme({
   fonts: {
@@ -21,6 +22,7 @@ ReactDOM.render(
           <Routes>
             <Route path="/" element={<App />}> 
               <Route path="/" element={<Home />}/>
+              <Route path="/connect" element={<Connect />}/>
               <Route path="/projects" element={<Projects />} />
             </Route>
           </Routes>
